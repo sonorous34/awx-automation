@@ -5,9 +5,9 @@
   gather_facts: false
   vars:
     controller_validate_certs: false
-    controller_hostname: controller.example.com
+    controller_hostname: localhost
     controller_username: admin
-    controller_password: changeme
+    controller_password: admin1234!
 
   collections:
     - awx.awx
@@ -17,7 +17,3 @@
       include_vars:
         dir: ./configs
         extensions: ["yml"]
-
-  roles:
-    - {role: ../.., when: controller_templates is defined}
-...
