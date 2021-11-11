@@ -1,0 +1,19 @@
+---
+- name: Update Projects on Controller
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    controller_validate_certs: false
+    controller_hostname: http://localhost
+    controller_username: admin
+    controller_password: admin1234!
+
+  collections:
+    - awx.awx
+
+  pre_tasks:
+    - name: Include vars from controller_configs directory
+      include_vars:
+        dir: ./configs
+        extensions: ["yml"]
