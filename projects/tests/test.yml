@@ -5,7 +5,7 @@
   gather_facts: false
   vars:
     controller_validate_certs: false
-    controller_hostname: localhost
+    controller_hostname: http://localhost
     controller_username: admin
     controller_password: admin1234!
 
