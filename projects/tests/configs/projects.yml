@@ -6,6 +6,6 @@ controller_projects:
     scm_branch: master
     scm_clean: true
     description: Example Project
-    organization: default
+    organization: k8s-awx
     update: true
     wait: true
