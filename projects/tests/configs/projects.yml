@@ -2,8 +2,8 @@
 controller_projects:
   - name: example-project
     scm_type: git
-    scm_url: https://github.com/ansible/tower-example.git
-    scm_branch: master
+    scm_url: https://github.com/sonorous34/awx-k8s-niginx.git
+    scm_branch: main
     scm_clean: true
     description: Example Project
     organization: k8s-awx
