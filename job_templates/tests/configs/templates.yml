@@ -6,7 +6,7 @@ controller_templates:
     inventory: k8s-inventory
     labels:
       - Prod
-    credentials: k8s-credential
+    credentials: awx-sshkey
     project: k8s-project
     playbook: 02-namespace_info.yml
 ...
